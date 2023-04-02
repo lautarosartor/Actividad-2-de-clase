@@ -1,0 +1,52 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    object-fit: contain;
+    height: 200px;
+    width: 200px;
+}
+
+.banner {
+    position: absolute;
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+/*Color de la barra de navegación*/
+.nav {
+    background-color: #005980;
+}
+
+/*Cajas de los iconos de la barra de navegación*/
+.nav__li {
+    display: inline-block;  /*Uno al lado del otro*/
+    padding: 12px;
+    color: #fff;    /*Color de los iconos*/
+}
+
+
+/*Cuando pasamos el cursor por encima modificamos el color de los iconos*/
+.nav__li:hover {
+    color: #bbb;
+}
+
+/*Links de la barra de navegación*/
+.nav__li a {
+    color: #fff;    /*Color de los links*/
+    text-decoration: none;  /*Quita el subrayado*/
+}
+
+/*Cuando pasamos el cursor por encima modificamos el color del link*/
+.nav__li:hover > a {
+    color: #bbb;
+}
+
+/*Resolucion de los iconos*/
+.nav__li i {
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+}
