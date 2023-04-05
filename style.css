@@ -2,46 +2,58 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: rgb(255, 219, 152);
+}
+
 .logo {
     object-fit: contain;
+    position: relative;
+    display: inline-flex;
     height: 200px;
-    width: 200px;
+    width: 14%;
+    background-color: black;
+    border: solid blue 3px;
 }
 
 .banner {
     position: absolute;
     object-fit: cover;
     height: 200px;
-    width: 100%;
+    width: 85%;
+    border: solid blue 3px;
+    border-left: 0px;
 }
 
 /*Color de la barra de navegación*/
 .nav {
-    background-color: #005980;
+    background-color: salmon;
+    text-align: center;
+    width: 100%;
 }
 
 /*Cajas de los iconos de la barra de navegación*/
 .nav__li {
     display: inline-block;  /*Uno al lado del otro*/
     padding: 12px;
-    color: #fff;    /*Color de los iconos*/
+    color: yellow;    /*Color de los iconos*/
 }
 
 
 /*Cuando pasamos el cursor por encima modificamos el color de los iconos*/
 .nav__li:hover {
-    color: #bbb;
+    color: red;
 }
 
 /*Links de la barra de navegación*/
 .nav__li a {
-    color: #fff;    /*Color de los links*/
+    color: yellow;    /*Color de los links*/
     text-decoration: none;  /*Quita el subrayado*/
 }
 
 /*Cuando pasamos el cursor por encima modificamos el color del link*/
 .nav__li:hover > a {
-    color: #bbb;
+    color: red;
 }
 
 /*Resolucion de los iconos*/
@@ -49,4 +61,47 @@
     box-sizing: border-box;
     text-align: right;
     margin-right: 5px;
+}
+
+main {
+    box-sizing: border-box;
+    height: 50vh;
+    width: 74%;
+    display: inline-block;
+    text-align: left;
+}
+
+.imagen-pacman {
+    width: 25%;
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+}
+
+.div__section {
+    box-sizing: border-box;
+    display: inline-block;
+    padding-left: 20px;
+    position: absolute;
+    border: solid blue 3px;
+    height: 50vh;
+    width: 50%;
+}
+
+aside {
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    border: solid red 3px;
+    height: 50vh;
+    width: 26%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 209, 123);
 }
